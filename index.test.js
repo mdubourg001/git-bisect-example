@@ -22,4 +22,12 @@ test("square(2) should be 4", () => {
   }
 });
 
+test("square(10) should be 100", () => {
+  const sq = square(10);
+
+  if (sq !== 100) {
+    throw `expected 100, got ${sq}`;
+  }
+});
+
 process.exit(exitCode);
