@@ -1,5 +1,7 @@
+const RADIX = 10;
+
 function square(n) {
-  const asNumber = Number.parseInt(n);
+  const asNumber = Number.parseInt(n, RADIX);
 
   if (Number.isNaN(asNumber)) {
     throw `"${n}" is not a number!`;
