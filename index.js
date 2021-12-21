@@ -1,6 +1,10 @@
 function square(n) {
   const asNumber = Number.parseInt(n);
 
+  if (Number.isNaN(asNumber)) {
+    throw `"${n}" is not a number!`;
+  }
+
   return asNumber * asNumber;
 }
 
