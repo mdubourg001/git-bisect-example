@@ -1,1 +1,1 @@
-exports.RADIX = 10;
+exports.RADIX = 16;
